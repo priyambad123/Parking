@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/blurred_background"
+    android:gravity="center_vertical" >
+
+    <ImageView
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:src="@drawable/parkinglogo"
+        android:layout_gravity="center"
+        android:id="@+id/imageView" />
+
+
+    <EditText
+        android:id="@+id/editTextUserNameToLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:hint="User Name"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/editTextPasswordToLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:singleLine="true"
+        android:hint="Password" />
+
+    <Button
+        android:id="@+id/buttonSignIn"
+        android:background ="@drawable/button_background"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:text="Sign In"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:onClick="signIn"/>
+
+<TextView 
+    android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+    android:id = "@+id/tv"
+    android:visibility="invisible"
+	android:text="hello"
+/>
+
+<TextView 
+    android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+    android:id = "@+id/tv_register"
+    android:ems="14"
+	android:text="@string/str_newtoeasypark"
+/>
+
+    <Button
+        android:id="@+id/buttonSignUP"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/button_background"
+        android:text="Sign Up"
+        android:textColor="#000"
+        android:textStyle="bold"/>
+
+
+</LinearLayout>

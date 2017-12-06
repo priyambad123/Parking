@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blurred_background"
+    android:orientation="vertical"
+    android:gravity="center_vertical" >
+    <ImageView
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:src="@drawable/parkinglogo"
+        android:layout_gravity="center"/>
+
+    <EditText
+        android:id="@+id/editTextUserName"
+        android:hint="User Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+         android:hint="Password"
+         android:singleLine="true"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/editTextConfirmPassword"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="Confirm Password"
+        android:singleLine="true"
+        android:inputType="textPassword" />
+
+    <Button
+        android:background="@drawable/button_background"
+        android:id="@+id/buttonCreateAccount"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:text="Create Account"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:layout_marginBottom="60dp" />
+    
+</LinearLayout>
